@@ -12,17 +12,14 @@ Note: TextGauge is smart enough to use its closest span sibling!
 
 # HTML Snippet
 ```
-<form action="#">
-	<div>
-		<textarea id="tg1" rows="4" col="40"></textarea>
-		<span></span>
-	</div>
-</form>
+<textarea id="tg1" rows="4" col="40"></textarea>
+<span></span>
 ```
 
 # jQuery Snippet
 ```javascript
 $(document).ready(function() {
+
 	$("#tg1").textgauge({
 		limit: 50,
 		colorPos: '#00FFFF',
@@ -34,5 +31,6 @@ $(document).ready(function() {
 			console.log("Exceeded limit");
 		}
 	});
+	
 });
 ```
