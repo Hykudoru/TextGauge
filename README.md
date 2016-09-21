@@ -9,7 +9,7 @@ TextGauge performs basic input length analysis, providing default color indicato
 Note: TextGauge is smart enough to use its closest span sibling.
 
 
-# jQuery Plugin Snippet
+# Plugin Installation
 ```javascript
 <script src="https://github.com/Hykudoru/TextGauge/textgauge.js"></script>
 ```
@@ -17,14 +17,8 @@ Note: TextGauge is smart enough to use its closest span sibling.
 # HTML Snippet
 ```
 <form action="#">
-	<div>
-		<input id="1" type="textarea"/>
-		<span></span>
-	</div>
-	<div>
-		<input id="2" type="textarea"/>
-		<span id="for2"></span>
-	</div>
+	<input id="1" type="textarea"/>
+	<span></span>
 </form>
 ```
 
