@@ -15,7 +15,7 @@
     "jquery",
     "text",
     "textarea",
-    "input",
+    "input"
   ],
   "author": "Alexander M. Fish <alexanderfish7@gmail.com>",
   "license": "MIT",
