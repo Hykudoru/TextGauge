@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "TextGauge is a smart jQuery plugin that performs basic input length analysis on DOM text/textarea nodes\r allowing you to pass callback functions to fire when one of your text gauges\r remains within or exceeds its boundaries. Default color indicators can optionally be modified.\r Note: TextGauge is smart enough to use its closest span sibling!",
   "main": "jquery.textgauge.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hykudoru/TextGauge.git"
+  "dependencies": {
+    "jquery": ">=1.11.3"
   },
   "keywords": [
     "jquery-plugin",
@@ -16,8 +12,9 @@
   ],
   "author": "Alexander M. Fish",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Hykudoru/TextGauge/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hykudoru/TextGauge.git"
   },
   "homepage": "https://github.com/Hykudoru/TextGauge#readme"
 }
