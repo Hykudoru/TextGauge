@@ -9,7 +9,7 @@ Note: TextGauge is smart enough to use its closest span sibling!
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/jquery.textgauge.js"></script>
 ```
 
-# Install via NPM
+# Install via Node Package Manager
 ```
 npm install textgauge
 ```
