@@ -14,7 +14,8 @@ Note: TextGauge is smart enough to use its closest span sibling.
 
 
 # HTML Snippet
-"<form action="#">
+----------
+<form action="#">
 	<div>
 		<input id="1" type="textarea"/>
 		<span></span>
@@ -24,7 +25,7 @@ Note: TextGauge is smart enough to use its closest span sibling.
 		<span id="for2"></span>
 	</div>
 </form>"
-
+----------
 
 # jQuery Snippet
 "$("#1").textgauge({
