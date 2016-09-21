@@ -1,5 +1,5 @@
 # TextGauge
-TextGauge performs basic input length analysis on DOM text/textarea nodes
+TextGauge is a smart jQuery plugin that performs basic input length analysis on DOM text/textarea nodes
 allowing you to pass callback functions to fire when one of your text gauges
 remains within or exceeds its boundaries. Default color indicators can optionally modified.
 Note: TextGauge is smart enough to use its closest span sibling!
