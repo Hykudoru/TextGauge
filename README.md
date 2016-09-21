@@ -4,12 +4,12 @@ allowing you to pass callback functions to fire when one of your text gauges
 remains within or exceeds its boundaries. Default color indicators can optionally be modified.
 Note: TextGauge is smart enough to use its closest span sibling!
 
-# Install Plugin
+# Install via JavaScript
 ```javascript
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/jquery.textgauge.js"></script>
 ```
 
-# Install via Package Manager
+# Install via NPM
 ```
 npm install textgauge
 ```
