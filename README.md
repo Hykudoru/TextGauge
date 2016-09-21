@@ -10,11 +10,12 @@ Note: TextGauge is smart enough to use its closest span sibling.
 
 
 # CDN Snippet
-"<script src="https://github.com/Hykudoru/TextGauge/textgauge.js"></script>"
+```
+<script src="https://github.com/Hykudoru/TextGauge/textgauge.js"></script>
 
 
 # HTML Snippet
-----------
+```
 <form action="#">
 	<div>
 		<input id="1" type="textarea"/>
@@ -25,10 +26,11 @@ Note: TextGauge is smart enough to use its closest span sibling.
 		<span id="for2"></span>
 	</div>
 </form>"
-----------
+
 
 # jQuery Snippet
-"$("#1").textgauge({
+```javascript
+$("#1").textgauge({
 	limit: 10,
 	onPos: function() {
 		console.log("Safe");
@@ -36,4 +38,4 @@ Note: TextGauge is smart enough to use its closest span sibling.
 	onNeg: function() {
 		console.log("Exceeded limit");
 	}
-});"
+});
