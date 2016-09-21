@@ -2,7 +2,7 @@
 TextGauge performs basic input length analysis on DOM text/textarea nodes
 allowing you to pass callback functions to fire when one of your text gauges
 remains within or exceeds its boundries. Default color indicators can optionally modified.
-Note: TextGauge is smart enough to use its closest span sibling.
+Note: TextGauge is smart enough to use its closest span sibling!
 
 
 # Plugin Installation
@@ -22,15 +22,17 @@ Note: TextGauge is smart enough to use its closest span sibling.
 
 # jQuery Snippet
 ```javascript
-$("#tg1").textgauge({
-	limit: 50,
-	colorPos: '#00FFFF',
-	colorNeg: '#FF0000',
-	onPos: function() {
-		console.log("Safe");
-	},
-	onNeg: function() {
-		console.log("Exceeded limit");
-	}
+$(document).ready(function() {
+	$("#tg1").textgauge({
+		limit: 50,
+		colorPos: '#00FFFF',
+		colorNeg: '#FF0000',
+		onPos: function() {
+			console.log("Safe");
+		},
+		onNeg: function() {
+			console.log("Exceeded limit");
+		}
+	});
 });
 ```
