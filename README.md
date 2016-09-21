@@ -9,7 +9,7 @@ Note: TextGauge is smart enough to use its closest span sibling.
 ```javascript
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/jquery.textgauge.js"></script>
 ```
- TextGauge/jquery.textgauge.js
+
 # HTML Snippet
 ```
 <form action="#">
