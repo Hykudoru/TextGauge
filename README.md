@@ -12,7 +12,7 @@ Note: TextGauge is smart enough to use its closest span sibling!
 
 # HTML Snippet
 ```
-<textarea id="tg1" rows="4" col="40"></textarea>
+<textarea id="tg1" rows="4" cols="40"></textarea>
 <span></span>
 ```
 
