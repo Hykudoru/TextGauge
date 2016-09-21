@@ -7,7 +7,7 @@ Note: TextGauge is smart enough to use its closest span sibling.
 
 # Plugin Installation
 ```javascript
-<script src="https://github.com/Hykudoru/TextGauge/blob/master/jquery.textgauge.js"></script>
+<script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/jquery.textgauge.js"></script>
 ```
  TextGauge/jquery.textgauge.js
 # HTML Snippet
