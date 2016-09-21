@@ -14,7 +14,7 @@ Note: TextGauge is smart enough to use its closest span sibling!
 ```
 <form action="#">
 	<div>
-		<input id="tg1" type="textarea"/>
+		<textarea id="tg1" rows="4" col="40"></textarea>
 		<span></span>
 	</div>
 </form>
