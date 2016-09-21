@@ -9,10 +9,10 @@ TextGauge performs basic input length analysis, providing default color indicato
 Note: TextGauge is smart enough to use its closest span sibling.
 
 
-# CDN Snippet
-```
+# jQuery Plugin Snippet
+```javascript
 <script src="https://github.com/Hykudoru/TextGauge/textgauge.js"></script>
-
+```
 
 # HTML Snippet
 ```
@@ -25,13 +25,13 @@ Note: TextGauge is smart enough to use its closest span sibling.
 		<input id="2" type="textarea"/>
 		<span id="for2"></span>
 	</div>
-</form>"
-
+</form>
+```
 
 # jQuery Snippet
 ```javascript
 $("#1").textgauge({
-	limit: 10,
+	limit: 50,
 	onPos: function() {
 		console.log("Safe");
 	},
@@ -39,3 +39,4 @@ $("#1").textgauge({
 		console.log("Exceeded limit");
 	}
 });
+```
