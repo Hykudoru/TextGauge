@@ -8,24 +8,25 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or span.
 Simply place a div or span after every TG or you won't see any output.
 
-# Install
+# Install via CDN
 ```
+<!--CSS Stylesheet-->
 <link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
-```
-```javascript
+<!--JavaScript-->
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
 ```
 
-# Install with Node Package Manager
+# Install via Node Package Manager
 ```
 npm install textgauge
 ```
 
 # HTML Snippet
 ```
-<input id="tg2" type="text"  rows="5" cols="50">
+<input id="tg1" type="text">
 <span></span>
-<textarea id="tg1" rows="5" cols="50"></textarea>
+
+<textarea id="tg2" rows="5" cols="50"></textarea>
 <span></span>
 		
 
