@@ -12,6 +12,8 @@ Simply place a div or span after every TG or you won't see any output.
 ```
 <!--CSS Stylesheet-->
 <link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
+```
+```
 <!--JavaScript-->
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
 ```
