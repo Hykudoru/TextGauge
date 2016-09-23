@@ -1,0 +1,45 @@
+.tg {
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 400;
+}
+.tg:active, 
+.tg:focus {
+	cursor: auto;
+}
+/* LIGHT THEME */
+.tg-theme-light {
+	border: 1px solid #505050;
+	background-color: #DDD;
+	color: #808080;
+}
+.tg-theme-light:active, 
+.tg-theme-light:focus {
+	border: 1px solid #00FFFF;
+	background-color: #DDD;
+	color: #404040;
+}
+/* DARK THEME */
+.tg-theme-dark {
+	border: 1px solid #CCC;
+	background-color: #505050;
+	color: #C0C0C0;
+}
+.tg-theme-dark:active, 
+.tg-theme-dark:focus {
+	border: 1px solid #00FFFF;
+	background-color: #505050;
+	color: #fff;
+}
+/* ELECTRON THEME */
+.tg-theme-electron {
+	border: 1px solid #CCC;
+	background-color: #505050;
+	color: #00BBBB;
+}
+.tg-theme-electron:active, 
+.tg-theme-electron:focus {
+	border: 1px solid #00FFFF;
+	background-color: #505050;
+	color: #00FFFF;
+}
