@@ -8,11 +8,11 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or a span.
 Simply place a div or span after every one of your TG's or no output will be visible.
 
-## Install
 ---
+## Install
+
 ### Download Full Project
 Includes all the source code and requires minor path tweaking.
----
 https://github.com/Hykudoru/TextGauge/archive/master.zip
 
 ### Install via CDN
@@ -29,31 +29,31 @@ https://github.com/Hykudoru/TextGauge/archive/master.zip
 ```
 $ npm install textgauge
 ```
-
-## Features
 ---
+## Features
+
 Customize positive/negative number indicator colors! 
 3 basic optional themes to choose from!
 - **tg-theme-light**
 - **tg-theme-dark**
 - **tg-theme-electron**
-
-## Exposed API
 ---
+## Exposed API
+
 ### Method
 $(selector).textgauge(options)
 
 ### Options
 **limit** : The maximum input allowed.
---
+
 **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
---
+
 **colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
---
+
 **colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
---
+
 **onPos** : Callback function that fires as the user types while still within boundaries.
---
+
 **onNeg** : Callback function that fires as the user types while beyond boundaries.
 
 ### HTML Snippet
