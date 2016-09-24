@@ -8,6 +8,27 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or a span.
 Simply place a div or span after every one of your TG's or no output will be visible.
 
+## Install
+
+### Download Full Project
+Includes all the source code and requires minor path tweaking.
+https://github.com/Hykudoru/TextGauge/archive/master.zip
+
+### Install via CDN
+```
+<!-- 3 Optional Themes -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
+```
+```
+<!-- Latest TextGauge -->
+<script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
+```
+
+### Install via npm
+```
+$ npm install textgauge
+```
+
 ## Features
 Customize positive/negative number indicator colors! 
 3 basic optional themes to choose from!
@@ -20,13 +41,13 @@ Customize positive/negative number indicator colors!
 ### Method
 $(selector).textgauge(options)
 
-### Options (object)
-- **limit** : The maximum input allowed.
-- **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
-- **colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
-- **colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
-- **onPos** : Callback function that fires as the user types while still within boundaries.
-- **onNeg** : Callback function that fires as the user types while beyond boundaries.
+### Options
+**limit** : The maximum input allowed.
+**theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
+**colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
+**colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
+**onPos** : Callback function that fires as the user types while still within boundaries.
+**onNeg** : Callback function that fires as the user types while beyond boundaries.
 
 ### HTML Snippet
 ```
@@ -66,25 +87,4 @@ $(document).ready(function() {
 	});
 
 });
-```
-
-## Install
-
-### Download Full Project
-Includes all the source code and requires minor path tweaking.
-https://github.com/Hykudoru/TextGauge/archive/master.zip
-
-### Install via CDN
-```
-<!-- 3 Optional Themes -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
-```
-```
-<!-- Latest TextGauge -->
-<script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
-```
-
-### Install via npm
-```
-$ npm install textgauge
 ```
