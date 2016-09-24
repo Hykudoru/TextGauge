@@ -8,14 +8,14 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or a span.
 Simply place a div or span after every one of your TG's or no output will be visible.
 
----
+
 # Install
 
-### Download Full Project
+## Download Full Project
 Includes all the source code and requires minor path tweaking.
 https://github.com/Hykudoru/TextGauge/archive/master.zip
 
-### Install via CDN
+## Install via CDN
 ```
 <!-- 3 Optional Themes -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
@@ -25,12 +25,12 @@ https://github.com/Hykudoru/TextGauge/archive/master.zip
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
 ```
 
-### Install via npm
+## Install via npm
 ```
 $ npm install textgauge
 ```
 
----
+
 # Features
 
 Customize positive/negative number indicator colors! 
@@ -39,29 +39,22 @@ Customize positive/negative number indicator colors!
 - **tg-theme-dark**
 - **tg-theme-electron**
 
----
+
 # Exposed API
 
-### Method
+## Method
 $(selector).textgauge(options)
 
-### Options
-**limit** : The maximum input allowed.
+## Options
+- **limit** : The maximum input allowed.
+- **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
+- **colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
+- **colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
+- **onPos** : Callback function that fires as the user types while still within boundaries.
+- **onNeg** : Callback function that fires as the user types while beyond boundaries.
 
-**theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
 
-**colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
-
-**colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
-
-**onPos** : Callback function that fires as the user types while still within boundaries.
-
-**onNeg** : Callback function that fires as the user types while beyond boundaries.
-
----
-# Code Snippets
-
-### HTML Snippet
+## HTML Snippet
 ```
 <input id="tg-1" type="text">
 <span></span>
@@ -70,7 +63,7 @@ $(selector).textgauge(options)
 <span></span>
 ```
 
-### jQuery Snippet
+## jQuery Snippet
 ```javascript
 $(document).ready(function() {
 
