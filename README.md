@@ -8,106 +8,27 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or a span.
 Simply place a div or span after every one of your TG's or no output will be visible.
 
-## Features
-Customize positive/negative number indicator colors!
+# Features
+Customize positive/negative number indicator colors! 
 3 basic optional themes to choose from!
-- tg-theme-light
-- tg-theme-dark
-- tg-theme-electron
+- **tg-theme-light**
+- **tg-theme-dark**
+- **tg-theme-electron**
 
-##Install
+# Using TextGauge
 
-### Download
-[Latest TextGauge](https://github.com/Hykudoru/TextGauge/archive/master.zip)
+## Method
+- $(selector).textgauge(options)
 
-### Install via CDN
-Insert the css and js within your document head section for instant action! 
-```
-<!-- 3 Optional Themes -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
-```
-```
-<!-- Latest TextGauge -->
-<script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
-```
+## Options (object)
+- **limit** : The maximum input allowed.
+- **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
+- **colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
+- **colorNeg** : Hexidecimal or named color assigned to number indicator when exceeded the limit.
+- **onPos** : Callback function that fires as the user types while still within boundaries.
+- **onNeg** : Callback function that fires as the user types while beyond boundaries.
 
-### Install via npm
-```
-$ npm install textgauge
-```
-
-### Install Directly
-```javascript
-;(function( $ ) {
-
-	$.fn.textgauge = function(options) {
-		
-		//Reject anything that is not a DOM textarea or text input
-		if (!this.is("textarea") && !this.is("input[type='text']")) {
-			console.log("TextGauge is only compatible with DOM textarea or text input nodes.");
-			
-			return null;
-		}
-		
-		//---------- Default Settings ----------
-		var defaults = {
-			limit: 50,
-			theme: '',
-			colorPos: '#00FFFF', //Aqua
-			colorNeg: '#FF0000', //Red
-			onPos: function() {
-				return;
-			},
-			onNeg: function() {
-				return;
-			}
-		};
-		
-		//---------- Settings ----------
-		var settings = $.extend({}, defaults, options);
-		this.addClass('tg ' + settings.theme);
-		var $indicator = this.next("span, div");
-		
-		//---------- Event Listeners ----------
-		$(document).ready(examine);
-		this.on("keyup", examine);
-		
-		//---------- Event Handler ----------
-		function examine() {
-			var inputLength = parseFloat($(this).val().length);
-			var inputRemaining = (settings.limit - inputLength);
-			//Clear indicator
-			$indicator.text("");
-			//Refill indicator and determine which callback to perform
-			if (inputRemaining > 0) {
-				$indicator.text(inputRemaining).css("color", settings.colorPos);
-				settings.onPos.call(this, this);
-			}else {
-				$indicator.text(inputRemaining).css("color", settings.colorNeg);
-				settings.onNeg.call(this, this);
-			}
-		}
-		
-		return this;
-	};
-	
-}( jQuery ));
-```
-
-## Using the TextGauge plugin
-
-### Functions/Methods
-- $(textarea/text).textgauge(options)
-
-### Options (object)
-- limit: The maximum input allowed.
-- theme: Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
-- colorPos: Hexidecimal or named color assigned to number indicator when still within the limit.
-- colorNeg: Hexidecimal or named color assigned to number indicator when exceeded the limit.
-- onPos: Callback function that fires as the user types while still within boundaries.
-- onNeg: Callback function that fires as the user types while beyond boundaries.
-
-### HTML Snippet
+## HTML Snippet
 ```
 <input id="tg-1" type="text">
 <span></span>
@@ -117,7 +38,7 @@ $ npm install textgauge
 
 
 ```
-### jQuery Snippet
+## jQuery Snippet
 ```javascript
 $(document).ready(function() {
 
@@ -145,4 +66,25 @@ $(document).ready(function() {
 	});
 
 });
+```
+
+# Install
+
+## Download Full Project
+Includes all the source code and requires some minor path tweaking.
+[https://github.com/Hykudoru/TextGauge/archive/master.zip]
+
+## Install via CDN
+```
+<!-- 3 Optional Themes -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
+```
+```
+<!-- Latest TextGauge -->
+<script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
+```
+
+## Install via npm
+```
+$ npm install textgauge
 ```
