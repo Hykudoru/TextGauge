@@ -1,12 +1,7 @@
 # TextGauge
 TextGauge is a smart jQuery plugin that performs basic input length analysis on
-DOM text/textarea nodes allowing you to pass callback functions to fire when one
-of your text gauges remains within or exceeds its limits. Features include
-customizable positive and negative number indicator colors and 3 customizable themes
-(tg-theme-light, tg-theme-dark, tg-theme-electron)! Note: TG is smart enough to
-reject attempts to use its functionality on any other DOM elements other than textarea
-or text input nodes. Each TG has its number indicator in the form of a div or a span.
-Simply place a div or span after every one of your TG's or no output will be visible.
+DOM text/textarea nodes allowing you to pass callback functions that fire when any
+one of your text gauges remain within or exceed its limits.
 
 ---
 
@@ -40,6 +35,11 @@ and choose between 3 optional themes!
 - **tg-theme-light**
 - **tg-theme-dark**
 - **tg-theme-electron**
+
+**Note:** TextGauge is smart enough
+to avoid operating on any other DOM elements other than textarea or text input nodes 
+even if explicitly attached. Each TextGauge has a number indicator in the form of a div or a span.
+Simply place a div or span after every one of your TG's or no output will be visible.
 
 ---
 
