@@ -8,19 +8,19 @@ reject attempts to use its functionality on any other DOM elements other than te
 or text input nodes. Each TG has its number indicator in the form of a div or a span.
 Simply place a div or span after every one of your TG's or no output will be visible.
 
-# Features
+## Features
 Customize positive/negative number indicator colors! 
 3 basic optional themes to choose from!
 - **tg-theme-light**
 - **tg-theme-dark**
 - **tg-theme-electron**
 
-# Using TextGauge
+## Exposed API
 
-## Method
-- $(selector).textgauge(options)
+### Method
+$(selector).textgauge(options)
 
-## Options (object)
+### Options (object)
 - **limit** : The maximum input allowed.
 - **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
 - **colorPos** : Hexidecimal or named color assigned to number indicator when still within the limit.
@@ -28,7 +28,7 @@ Customize positive/negative number indicator colors!
 - **onPos** : Callback function that fires as the user types while still within boundaries.
 - **onNeg** : Callback function that fires as the user types while beyond boundaries.
 
-## HTML Snippet
+### HTML Snippet
 ```
 <input id="tg-1" type="text">
 <span></span>
@@ -38,7 +38,7 @@ Customize positive/negative number indicator colors!
 
 
 ```
-## jQuery Snippet
+### jQuery Snippet
 ```javascript
 $(document).ready(function() {
 
@@ -68,13 +68,13 @@ $(document).ready(function() {
 });
 ```
 
-# Install
+## Install
 
-## Download Full Project
-Includes all the source code and requires some minor path tweaking.
-[https://github.com/Hykudoru/TextGauge/archive/master.zip]
+### Download Full Project
+Includes all the source code and requires minor path tweaking.
+https://github.com/Hykudoru/TextGauge/archive/master.zip
 
-## Install via CDN
+### Install via CDN
 ```
 <!-- 3 Optional Themes -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
@@ -84,7 +84,7 @@ Includes all the source code and requires some minor path tweaking.
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
 ```
 
-## Install via npm
+### Install via npm
 ```
 $ npm install textgauge
 ```
