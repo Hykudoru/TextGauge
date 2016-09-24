@@ -15,7 +15,7 @@ Simply place a div or span after every one of your TG's or no output will be vis
 Includes all the source code and requires minor path tweaking.
 https://github.com/Hykudoru/TextGauge/archive/master.zip
 
-### Install via CDN
+#### Install via CDN
 ```
 <!-- 3 Optional Themes -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/Hykudoru/TextGauge/master/css/textgauge.css">
@@ -25,10 +25,11 @@ https://github.com/Hykudoru/TextGauge/archive/master.zip
 <script src="https://cdn.rawgit.com/Hykudoru/TextGauge/master/js/jquery.textgauge.js"></script>
 ```
 
-### Install via npm
+#### Install via npm
 ```
 $ npm install textgauge
 ```
+
 ---
 ## Features
 
@@ -37,13 +38,14 @@ Customize positive/negative number indicator colors!
 - **tg-theme-light**
 - **tg-theme-dark**
 - **tg-theme-electron**
+
 ---
 ## Exposed API
 
-### Method
+#### Method
 $(selector).textgauge(options)
 
-### Options
+#### Options
 **limit** : The maximum input allowed.
 
 **theme** : Choose any one of 3 class themes (tg-theme-light, tg-theme-dark, tg-theme-electron).
@@ -56,7 +58,10 @@ $(selector).textgauge(options)
 
 **onNeg** : Callback function that fires as the user types while beyond boundaries.
 
-### HTML Snippet
+---
+## Code Snippets
+
+#### HTML Snippet
 ```
 <input id="tg-1" type="text">
 <span></span>
@@ -64,9 +69,8 @@ $(selector).textgauge(options)
 <textarea id="tg-2" rows="5" cols="50"></textarea>
 <span></span>
 
-
 ```
-### jQuery Snippet
+#### jQuery Snippet
 ```javascript
 $(document).ready(function() {
 
