@@ -5,7 +5,6 @@
 		//Reject anything that is not a DOM textarea or text input
 		if (!this.is("textarea") && !this.is("input[type='text']")) {
 			console.log("TextGauge is only compatible with DOM textarea or text input nodes.");
-			
 			return null;
 		}
 		
