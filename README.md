@@ -62,10 +62,10 @@ $(selector).textgauge(options)
 
 ## HTML Snippet
 ```
-<input id="tg-1" type="text">
+<input id="example1" class="tg" type="text">
 <span></span>
 
-<textarea id="tg-2" rows="5" cols="50"></textarea>
+<textarea id="example2" class="tg" rows="5" cols="50"></textarea>
 <span></span>
 ```
 
@@ -73,7 +73,7 @@ $(selector).textgauge(options)
 ```javascript
 $(document).ready(function() {
 
-	$("#tg1").textgauge({
+	$("#example1").textgauge({
 		limit: 50,
 		onPos: function() {
 			console.log("Safe Zone");
@@ -83,7 +83,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$("#tg1").textgauge({
+	$("#example2").textgauge({
 		limit: 100,
 		theme: 'tg-theme-electron',
 		colorPos: '#00FFFF',
